@@ -2,11 +2,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>Images, Tables and Intro to JS</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header>
+      <img class="fill" src="assets/downloads/tafe_wa_dark.gif" alt="Blackboard banner" >
       <h1>Welcome to Our Website</h1>
+      <script>console.log("Hello, from embedded")</script>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -18,6 +20,36 @@
       </nav>
     </header>
     <div class="container">
+      <h2>Challenge four</h2>
+      <p>    Save the sum.js file (with the JavaScript code) in the assets/js folder. <br>
+
+        Create an external link to the new file <br>
+    
+        Open index.html in Google Chrome. <br>
+    
+        Open Chrome DevTools: <br>
+            Right-click on the page and select "Inspect" or press Ctrl+Shift+I (Windows/Linux) or Cmd+Option+I (Mac). <br>
+    
+        In the DevTools window, navigate to the "Sources" tab. <br>
+    
+        On the left sidebar, you'll see your file structure. Open the sum.js file. <br>
+    
+        Place breakpoints: <br>
+            Click on the line number 2 (next to function calculateSum(start, finish)) to set a breakpoint at the start of the calculateSum function. <br>
+            Click on line number 10 (next to console.log) to set a breakpoint at the console.log statement. <br>
+    
+        Reload the web page to start debugging. You should see the execution paused at the first breakpoint (line 2). <br>
+    
+        Use the controls in the DevTools panel to step through the code: <br>
+            Step Over (F10): Execute the current line and move to the next. <br>
+            Step Into (F11): If there's a function call, enter the function and debug it. <br>
+            Step Out (Shift + F11): Finish debugging the current function and return to the caller. <br>
+            Continue (F8): Continue execution until the next breakpoint. <br>
+      
+    
+        While debugging, inspect the variables start, finish, and sum in the "Scope" section of the DevTools to see their values. <br>
+    
+        Continue debugging until you reach the console.log statement (line 5), and observe the output in the DevTools console.</p>
       <section class="main-content">
         <h2>Latest News</h2>
         <div class="news-article">
@@ -44,4 +76,6 @@
       <p>&copy; 2023 Your Company. All rights reserved.</p>
     </footer>
   </body>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/sum.js"></script>
 </html>
